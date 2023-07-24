@@ -64,6 +64,7 @@ img {
   padding-right: 16px;*/
   margin-left: auto;
   margin-right: auto;
+  padding: 0 15px;
   /*
   outline: 2px solid red;
   outline-offset: -2px;*/
@@ -101,6 +102,7 @@ img {
 }
 .head-cont {
   display: flex;
+  padding: 15px 0;
 }
 .nav-container {
   display: flex;
@@ -224,9 +226,10 @@ img {
 .section-top {
   background-color: #2e2f42;
   background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero_img/img1.jpg);
-  padding-top: 188px;
-  padding-bottom: 188px;
+    url(../images/hero_img/img1.jpg), url(../images/hero_img/Dark-bg@2x.jpg),
+    url(../images/hero_img/Dark-bg@3x.jpg);
+  padding-top: 112px;
+  padding-bottom: 112px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -246,12 +249,12 @@ img {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 45px;
+  font-size: 36px;
   line-height: 40px;
   letter-spacing: 0.72px;
   text-transform: capitalize;
   color: #ffffff;
-  max-width: 418px;
+  max-width: 320px;
   margin: 0 auto;
   margin-bottom: 80px;
 }
@@ -278,7 +281,7 @@ img {
 }
 /*main section1 feature*/
 .section-feature {
-  padding: 96px 16px;
+  padding: 96px 0;
 }
 @media screen and (min-width: 1158px) {
   .section-feature {
@@ -347,7 +350,7 @@ img {
   color: var(--port-paragraf);
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
   /* font-size: 16px;
@@ -419,8 +422,8 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 72px;
-  margin-left: 82px;
-  margin-right: 82px;
+  /* margin-left: 82px;
+  margin-right: 82px;*/
 }
 @media screen and (min-width: 768px) {
   .team-list-items {
@@ -442,7 +445,7 @@ img {
   }
 }
 .name-list {
-  display: flex;
+  /*display: flex;*/
   /*width: 264px;*/
   padding-bottom: 0px;
   flex-direction: column;
@@ -543,7 +546,7 @@ img {
 }*/
 /*@media screen and (min-width: 320px)*/
 .customers-list {
-  padding: 96px 16px;
+  padding: 96px 0;
 }
 @media screen and (min-width: 768px) {
   .customers-list {
@@ -552,7 +555,7 @@ img {
 }
 @media screen and (min-width: 1158px) {
   .customers-list {
-    padding: 120px 156px;
+    padding: 120px 0;
   }
 }
 .sec-name {
@@ -600,7 +603,7 @@ img {
 }*/
 /*@media screen and (min-width: 320px)*/
 .customers-items-list {
-  border: 1px solid var(--customer-link);
+  /* border: 1px solid var(--customer-link);*/
   border-radius: 4px;
   height: 88px;
   width: calc((100% - 16px) / 2);
@@ -895,8 +898,8 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
-  min-height: 584px;
+  /* width: 408px;
+  min-height: 584px;*/
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -907,8 +910,14 @@ img {
 }
 @media screen and (max-width: 767px) {
   .modal-window {
-    position: fixed;
-    width: 392px;
+    width: 95%;
+    max-width: 392px;
+    height: 95%;
+    max-height: 584px;
+    overflow: scroll;
+
+    /* position: fixed;
+    width: 392px;*/
   }
 }
 .modal-button {
@@ -1193,14 +1202,16 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 32px;
   background-color: #fff;
   z-index: 999;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-container.is-open {
@@ -1216,7 +1227,7 @@ img {
 
 .mobile-menu {
   padding: 0;
-  margin: 0;
+  margin-bottom: 235px;
   list-style: none;
 }
 
@@ -1232,4 +1243,30 @@ img {
   margin-bottom: 40px;
   color: var(--logo1);
   text-decoration: none;
+}
+.mobile-menu .link_mob {
+  color: #4d5ae5;
+}
+.mobile-menu-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+.menu-mob {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #4d5ae5;
+}
+.menu-mail {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.mobile-menu-icons {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  padding: 4px 0;
 }
