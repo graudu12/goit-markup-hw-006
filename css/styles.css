@@ -226,8 +226,7 @@ img {
 .section-top {
   background-color: #2e2f42;
   background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero_img/img1.jpg), url(../images/hero_img/Dark-bg@2x.jpg),
-    url(../images/hero_img/Dark-bg@3x.jpg);
+    url(../images/hero_img/img1.jpg);
   padding-top: 112px;
   padding-bottom: 112px;
   background-repeat: no-repeat;
@@ -236,6 +235,12 @@ img {
   max-width: 1440px;
   margin: 0 auto;
 }
+@media (min-resolution: 192dpi) {
+  .section-top {
+    background-image: url(../images/hero_img/Dark-bg@2x.jpg);
+  }
+}
+
 /*.main-top {
   display: inline-flex;
   flex-direction: column;
