@@ -380,7 +380,15 @@ img {
     font-size: 36px;
   }
 }
-
+@media screen and (min-width: 1158px) {
+  .feature-text {
+    font-weight: 400;
+  }
+  .feature-title {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+  }
+}
 /*main section2 about*/
 .section-doing {
   display: none;
